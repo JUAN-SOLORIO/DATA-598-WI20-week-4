@@ -35,7 +35,7 @@ library(grid)
 library(gridExtra)
 ```
 
-```{r, fx-def-chuck, echo=FALSE}
+```{r, fx-def-chuck, echo=FALSE, cache=TRUE}
 vizual_sct_den <- function(df, varx, vary, varz){
   par(mfrow = c(1,2))
   scatter_plot <- ggplot(df, aes(x = {{varx}}, y = {{vary}}, color={{varz}})) + 
@@ -86,7 +86,7 @@ starwars %>%
 
 Table \@ref(tab:starwars-tbl) shows the subset of the data for the species 'human' from the starwars dataset.
 
-# Citations and More Data
+# More Information
 
 There is more analysis in the article "Movienet: A Movie Multilayer Network Model using Visual and Textual Semantic Cues". [@starwars2019statistics].
 
